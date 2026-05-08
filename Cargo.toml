@@ -1,0 +1,39 @@
+[package]
+name = "big_number"
+version = "1.0.0"
+edition = "2024"
+description = "A decimal fixed-point big-number library backed by a custom bigint core"
+readme = "README.md"
+documentation = "https://docs.rs/big_number"
+license-file = "LICENSE.md"
+keywords = ["decimal", "fixed-point", "bigint", "math"]
+categories = ["mathematics", "algorithms", "data-structures"]
+include = [
+	"src/**",
+	"tests/**",
+	"benches/**",
+	"docs/architecture.md",
+	"CHANGELOG.md",
+	"LICENSE.md",
+	"RELEASING.md",
+	"README.md",
+	"Cargo.toml",
+	"Cargo.lock",
+]
+
+[package.metadata.docs.rs]
+all-features = false
+rustdoc-args = ["--cfg", "docsrs"]
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.5"
+num-bigint = "0.4"
+num-bigfloat = "1.7.2"
+num-integer = "0.1"
+num-traits = "0.2"
+
+[[bench]]
+name = "benchmark_suite"
+harness = false
