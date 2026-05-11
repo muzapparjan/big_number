@@ -4,7 +4,6 @@ version = "1.0.0"
 edition = "2024"
 description = "A decimal fixed-point big-number library backed by a custom bigint core"
 readme = "README.md"
-documentation = "https://docs.rs/big_number"
 license-file = "LICENSE.md"
 keywords = ["decimal", "fixed-point", "bigint", "math"]
 categories = ["mathematics", "algorithms", "data-structures"]
